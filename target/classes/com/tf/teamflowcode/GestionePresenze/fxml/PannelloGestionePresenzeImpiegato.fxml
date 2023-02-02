@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="810.0" stylesheets="@../css/stylePannelloPresenze.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tf.teamflowcode.GestionePresenze.GestionePresenzeInterface.PannelloGestionePresenze">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="810.0">
+         <image>
+            <Image url="@../../Pannelli/img/SfondoBlurImpiegato.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="329.0" fitWidth="539.0" layoutX="223.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../sfondo.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="98.0" layoutX="-15.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Pannelli/img/tastoIndietro.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button fx:id="buttonIndietro" layoutX="6.0" mnemonicParsing="false" onAction="#buttonVaiIndietro" opacity="0.0" prefHeight="50.0" prefWidth="50.0" stylesheets="@../../Pannelli/css/stylePannelloImpostazioni.css" text="Button" />
+      <Button id="buttonRichiediFerie" layoutX="428.0" layoutY="201.0" mnemonicParsing="false" onAction="#buttonRichiediFerie" text="RICHIEDI FERIE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button id="buttonComunicaAssenza" layoutX="404.0" layoutY="274.0" mnemonicParsing="false" onAction="#buttonComunicaAssenza" text="COMUNICA ASSENZA">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button id="buttonRichiediPermesso" layoutX="408.0" layoutY="351.0" mnemonicParsing="false" onAction="#buttonRichiediPermesso" text="RICHIEDI PERMESSO">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="273.0" layoutY="127.0" text="Gestione Presenze">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="59.0" fitWidth="50.0" layoutX="223.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Pannelli/img/Picture2.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

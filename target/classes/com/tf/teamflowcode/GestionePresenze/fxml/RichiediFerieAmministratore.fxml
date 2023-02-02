@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="810.0" stylesheets="@../css/styleModuloRichiediPermesso.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tf.teamflowcode.GestionePresenze.GestionePresenzeInterface.InterfacciaRichiediFerie">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="810.0">
+         <image>
+            <Image url="@../../Pannelli/img/SfondoBlurAmministratore.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="329.0" fitWidth="539.0" layoutX="223.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../sfondo.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="98.0" layoutX="-15.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Pannelli/img/tastoIndietro.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button fx:id="buttonIndietro" layoutX="6.0" mnemonicParsing="false" onAction="#buttonVaiIndietro" opacity="0.0" prefHeight="50.0" prefWidth="50.0" stylesheets="@../../Pannelli/css/stylePannelloImpostazioni.css" text="Button" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="223.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Pannelli/img/Picture2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="273.0" layoutY="127.0" text="Richiedi Ferie">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label layoutX="296.0" layoutY="170.0" text="Seleziona l'intervallo di date in cui richiedere le ferie">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker id="datePicker" fx:id="datePicker1" layoutX="367.0" layoutY="250.0" prefHeight="42.0" prefWidth="251.0" promptText="Inizio ferie" />
+      <DatePicker id="datePicker" fx:id="datePicker2" layoutX="367.0" layoutY="320.0" prefHeight="42.0" prefWidth="251.0" promptText="Fine ferie" />
+      <Button id="buttonConferma" layoutX="440.0" layoutY="391.0" mnemonicParsing="false" onAction="#buttonConferma" text="CONFERMA">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="labelPeriodoRosso" layoutX="290.0" layoutY="195.0" text="Label" textFill="#c40000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

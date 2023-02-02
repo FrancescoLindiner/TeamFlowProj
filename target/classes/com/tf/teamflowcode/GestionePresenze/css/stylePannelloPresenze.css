@@ -1,0 +1,27 @@
+#buttonRichiediFerie {
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+#buttonRichiediPermesso {
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+#buttonComunicaAssenza {
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+#buttonGestioneFerie {
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
