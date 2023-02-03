@@ -218,7 +218,8 @@ public class GeneraOrarioControl {
                 // prendi tutti gli immpiegati di quel servizio
                 int impiegatiTotali = accountControl.prendiImpiegati(dipendente.getTipologia());
                 int i = 0;
-                while (!localDateInizioFerie.isEqual(localDateFineFerie)) {
+                LocalDate date = localDateInizioFerie;
+                while (!date.isEqual(localDateFineFerie)) {
                     // prendi gli impiegati che lavorano quel giorno
                     int impiegati = boundaryGestioneOrariEStipendi
                             .prendiImpiegatiQuelGiorno(localDateInizioFerie.toString(), dipendente.getTipologia());
@@ -232,7 +233,7 @@ public class GeneraOrarioControl {
                         break;
                         // altrimenti non vengono concesse e vengono generati gli orari normali
                     }
-                    localDateInizioFerie.plusDays(i);
+                    date = localDateInizioFerie.plusDays(i);
                     i++;
                 }
                 if (ferie) {

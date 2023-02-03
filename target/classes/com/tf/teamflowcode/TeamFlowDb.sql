@@ -62,23 +62,21 @@ CREATE TABLE ferie (
 
 delete from stipendio where anno_s='2023';
 
-delete from turno where t_matricola=44;
-delete from turno where t_matricola=60;
-delete from turno where t_matricola=59;
-delete from turno where t_matricola=84;
-delete from turno where t_matricola=83;
-SELECT * FROM dipendente WHERE matricola NOT IN (SELECT f_matricola FROM ferie)
+delete from turno where t_matricola=58;
+delete from turno where t_matricola=56;
+delete from turno where t_matricola=86;
+delete from turno where t_matricola=45;
+delete from turno where t_matricola=58;
+
 select * from dipendente;
 select * from turno;
 select * from stipendio;
-select * from permesso;
 select * from ferie;
 
-select * from turno where t_matricola=47;
-select * from turno where descrizione='ferie'
+select * from dipendente where tipologia='Impiegato A' and matricola in (select t_matricola from turno where data='2023-06-01' and descrizione!='libero')
+delete from ferie where id_ferie=90;
 
-
-INSERT INTO ferie (data_inizio_ferie, data_fine_ferie, f_matricola, data_inizio_periodo_rosso, data_fine_periodo_rosso) VALUES ('2023-05-08', '2023-05-10', 58, null, null)
+select * from turno where t_matricola=44;
 
 INSERT INTO turno (data, descrizione, t_matricola, ora_inizio, ora_fine) VALUES
   ('2022-01-01', 'mattina', 1, '08:00:00', '16:00:00'),
