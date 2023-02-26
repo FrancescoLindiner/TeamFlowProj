@@ -2,7 +2,7 @@ package com.tf.teamflowcode.GestionePresenze.GestionePresenzeControl;
 
 import com.tf.teamflowcode.Utils.BoundaryDBMS;
 
-public class ControlAssenza {
+public class GestionePresenzeControl {
 
     BoundaryDBMS boundaryPannelli = new BoundaryDBMS();
 

@@ -14,7 +14,7 @@ import javafx.scene.control.DatePicker;
 import javafx.stage.Stage;
 
 import com.tf.teamflowcode.GestioneAccount.GestioneAccountControl.AccountControl;
-import com.tf.teamflowcode.GestionePresenze.GestionePresenzeControl.ControlAssenza;
+import com.tf.teamflowcode.GestionePresenze.GestionePresenzeControl.GestionePresenzeControl;
 import com.tf.teamflowcode.GestionePresenze.GestionePresenzeControl.RimpiazzaControl;
 import com.tf.teamflowcode.Utils.BoundaryDBMS;
 
@@ -31,7 +31,7 @@ public class InterfacciaComunicaAssenza {
     @FXML
     private DatePicker datePicker;
 
-    ControlAssenza controlAssenza = new ControlAssenza();
+    GestionePresenzeControl controlAssenza = new GestionePresenzeControl();
     AccountControl accountControl = new AccountControl();
     RimpiazzaControl rimpiazzaImpiegato = new RimpiazzaControl();
 

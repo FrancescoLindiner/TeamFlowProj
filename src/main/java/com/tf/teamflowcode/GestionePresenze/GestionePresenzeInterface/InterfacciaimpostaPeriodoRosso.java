@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 import javafx.fxml.FXMLLoader;
 
-public class GestioneFerie {
+public class InterfacciaimpostaPeriodoRosso {
 
 	Parent parent;
 	Stage stage;

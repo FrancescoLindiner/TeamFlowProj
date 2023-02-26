@@ -376,19 +376,6 @@ public class InterfacciaPrincipaleDipendente implements Initializable {
     }
 
     @FXML
-    void buttonFirma(ActionEvent event) throws IOException {
-        parent = FXMLLoader.load(getClass()
-                .getResource(
-                        "/com/tf/teamflowcode/GestionePresenze/fxml/InterfacciaFirma.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(parent, 810, 500);
-        stage.setScene(scene);
-        stage.setResizable(false);
-        stage.setTitle("Firma");
-        stage.show();
-    }
-
-    @FXML
     void buttonFirmaRemoto(ActionEvent event) throws IOException {
         if (accountControl.returnRuolo().equals("Amministratore")) {
             parent = FXMLLoader.load(getClass()

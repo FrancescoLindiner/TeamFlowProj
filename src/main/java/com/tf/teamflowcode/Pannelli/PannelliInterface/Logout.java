@@ -1,4 +1,4 @@
-package com.tf.teamflowcode.GestioneAccount.GestioneAccountInterface;
+package com.tf.teamflowcode.Pannelli.PannelliInterface;
 
 import java.io.IOException;
 

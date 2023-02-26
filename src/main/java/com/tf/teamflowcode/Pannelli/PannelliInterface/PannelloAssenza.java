@@ -11,11 +11,11 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 
 import com.tf.teamflowcode.GestioneAccount.GestioneAccountControl.AccountControl;
-import com.tf.teamflowcode.GestionePresenze.GestionePresenzeControl.ControlAssenza;
+import com.tf.teamflowcode.GestionePresenze.GestionePresenzeControl.GestionePresenzeControl;
 
 public class PannelloAssenza {
 
-    ControlAssenza controlAssenza = new ControlAssenza();
+    GestionePresenzeControl controlAssenza = new GestionePresenzeControl();
     AccountControl accountControl = new AccountControl();
 
     Parent parent;

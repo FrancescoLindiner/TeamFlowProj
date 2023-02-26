@@ -32,7 +32,7 @@
          </effect>
       </ImageView>
       <Button layoutX="5.0" layoutY="1.0" mnemonicParsing="false" onAction="#buttonVaiIndietro" opacity="0.0" prefHeight="51.0" prefWidth="51.0" text="Button" />
-      <Button id="buttonConferma" layoutX="459.0" layoutY="293.0" mnemonicParsing="false" onAction="#buttonRimuovi" stylesheets="@../css/styleAggiungiImpiegati.css" text="RIMUOVI">
+      <Button id="buttonConferma" layoutX="450.0" layoutY="293.0" mnemonicParsing="false" onAction="#buttonRimuovi" stylesheets="@../css/styleAggiungiImpiegati.css" text="CONFERMA">
          <effect>
             <DropShadow />
          </effect>
