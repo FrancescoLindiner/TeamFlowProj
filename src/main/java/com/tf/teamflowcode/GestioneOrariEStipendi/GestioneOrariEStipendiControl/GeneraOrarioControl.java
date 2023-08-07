@@ -144,7 +144,7 @@ public class GeneraOrarioControl {
                 numeroRandom = 1;
             }
             if (numeroRandom == 1) {
-                int counter = 0;
+                int counter = 1;
                 while (counter < counterGiorni) {
                     if (counter % 7 == 5) {
                         caricaTurnoNotturno(dipendente.getMatricola(), getData(counter), oraNotteInizio, oraNotteFine);
@@ -163,12 +163,12 @@ public class GeneraOrarioControl {
                 }
                 numeroRandom++;
             } else if (numeroRandom == 2) {
-                int counter = 0;
+                int counter = 1;
                 while (counter < counterGiorni) {
-                    if (counter % 7 == 3) {
+                    if (counter % 7 == 2) {
                         caricaTurnoNotturno(dipendente.getMatricola(), getData(counter), oraNotteInizio, oraNotteFine);
                         counter += 2;
-                    } else if (counter % 7 == 5) {
+                    } else if (counter % 7 == 4) {
                         caricaITurni2(dipendente.getMatricola(), getData(counter), ora_inizio2Mattina, ora_fine2Mattina,
                                 ora_inizio2Pome, ora_fine2Pome);
                         counter++;
@@ -182,12 +182,12 @@ public class GeneraOrarioControl {
                 }
                 numeroRandom++;
             } else {
-                int counter = 0;
+                int counter = 1;
                 while (counter < counterGiorni) {
-                    if (counter % 7 == 4) {
+                    if (counter % 7 == 1) {
                         caricaTurnoNotturno(dipendente.getMatricola(), getData(counter), oraNotteInizio, oraNotteFine);
                         counter += 2;
-                    } else if (counter % 7 == 2) {
+                    } else if (counter % 7 == 6) {
                         caricaITurni3(dipendente.getMatricola(), getData(counter), ora_inizio3Mattina, ora_fine3Mattina,
                                 ora_inizio3Pome, ora_fine3Pome);
                         counter++;
@@ -552,7 +552,7 @@ public class GeneraOrarioControl {
         Format formatter;
         Calendar calendar = Calendar.getInstance();
 
-        calendar.add(Calendar.DATE, giorno);
+        calendar.add(Calendar.DATE, giorno-1);
         date = calendar.getTime();
         formatter = new SimpleDateFormat("yyyy-MM-dd");
         s = formatter.format(date);
